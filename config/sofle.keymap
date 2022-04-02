@@ -54,13 +54,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |BLE  | INS  | PSCR | GUI   |       |      |                | PGUP | HOME |   ^   |  END |       |       |
-// |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |       | BKSPC |
+// |USB  | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |       | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
 &out OUT_BLE &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &kp N0  &trans
-&trans       &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &trans  &kp BSPC
+OUT_USB      &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &trans  &kp BSPC
 &trans       &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
                           &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
