@@ -43,11 +43,11 @@
 &kp F1    &kp F2    &kp F3    &kp F4      &kp F5    &kp F6                              &kp F7    &kp F8   &kp F9  &kp F10 &kp F11 &kp F12
 &kp TILDE &kp LT    &kp GT    &kp SQT     &kp DQT   &kp GRAVE                           &trans    &kp N7   &kp N8  &kp N9  &trans  &trans    
 &trans    &kp LBKT  &kp RBKT  &kp LBRC    &kp RBRC  &kp PIPE                            &trans    &kp N4   &kp N5  &kp N6  &trans  &trans
-&trans    &kp MINUS &kp UNDER &kp EQUAL   &kp PLUS  &kp BSLH  &trans        &trans      &trans    &kp N1   &kp N2  &kp N3  &trans  &trans
+&trans    &kp MINUS &kp UNDER &kp EQUAL   &kp PLUS  &kp BSLH  &bootloader   &bootloader &trans    &kp N1   &kp N2  &kp N3  &trans  &trans
                     &trans    &trans      &trans    &trans    &kp ENTER     &kp BSPC    &kp N0    &trans   &trans  &trans    
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp K_NEXT K_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -58,14 +58,14 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_BLE &out OUT_USB                 &kp F7    &kp F8    &kp F9   &kp F10   &kp F11 &kp F12
-&trans     &trans       &trans       &trans       &trans       &trans                       &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &trans
-&trans     &trans       &trans       &trans       &trans       &trans                       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp SQT &trans
-&trans     &trans       &trans       &trans       &trans       &trans   &trans    &trans    &trans    &trans    &trans   &trans    &kp DQT &trans
-                        &trans       &trans       &trans       &trans   &kp BSPC  &kp ENTER &trans    &trans    &trans   &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &out OUT_BLE &out OUT_USB                         &kp F7    &kp F8    &kp F9   &kp F10   &kp F11 &kp F12
+&trans     &trans       &trans       &trans       &trans       &trans                               &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &trans
+&trans     &trans       &trans       &trans       &trans       &trans                               &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp SQT &trans
+&trans     &trans       &trans       &trans       &trans       &trans   &bootloader     &bootloader &trans    &trans    &trans   &trans    &kp DQT &trans
+                        &trans       &trans       &trans       &trans   &kp BSPC        &kp ENTER   &trans    &trans    &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp K_NEXT K_PREV &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
