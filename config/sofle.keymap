@@ -4,8 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define WIN 0
-#define LOW 1
-#define UP 2
+#define MAC 1
+#define LOWER 2
+#define UPPER 3
 
 /* Behavior Settings */
 &caps_word {
@@ -72,7 +73,7 @@
 &kp ESC     &kp Q   &kp W    &kp E    &kp R     &kp T                                           &kp Y       &kp U     &kp I     &kp O    &kp P     &kp BSPC
 &kp TAB     &kp A   &kp S    &kp D    &kp F     &kp G                                           &kp H       &kp J     &kp K     &kp L    &kp SEMI  &kp SQT
 &shift_caps &kp Z   &kp X    &kp C    &kp V     &kp B     &kp C_MUTE                  &kp C_PP  &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT
-                    &kp LWIN &kp LALT &kp LCTRL &kp SPACE &mo LOW                     &mo UP    &kp SPACE   &kp RCTRL &kp RALT  &kp RWIN
+                    &kp LWIN &kp LALT &kp LCTRL &kp SPACE &mo LOWER                   &mo UPPER &kp SPACE   &kp RCTRL &kp RALT  &kp RWIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
