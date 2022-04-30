@@ -53,7 +53,7 @@
             label = "SHIFT_CAPS_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHFT>, <&kp &caps_word>;
+            bindings = <&kp LSHFT>, <&caps_word>;
         };
     };
 
